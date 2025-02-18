@@ -4,11 +4,8 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { useParams } from 'next/navigation'
 
 export default function ProjectDetail() {
-  const params = useParams()
-  
   // This would typically come from an API or database
   const projectData = {
     "title": "Project Traffix",

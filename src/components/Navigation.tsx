@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Navigation() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+  const [, setHoveredIndex] = useState<number | null>(null)
   const codeSnippet = '<div className="flex justify-center">\n  <Button onClick={() => {\n    router.push("/projects");\n  }}>Open Projects</Button></div>;'
 
   const navigationItems = [
