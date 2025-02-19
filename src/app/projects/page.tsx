@@ -22,7 +22,7 @@ export default function Projects() {
       title: "Visola- The Education Ai",
       category: "Artificial Intelligence",
       image: "/d17.png",
-      description: "A project that replaces the traditional teachers need to correct and grade the tests along wtih AI generated feedback. A MVP level 1 software made under the Founder Suite Inc",
+      description: "A project that helps students to learn and understand the concepts better with the help of AI using Video and stepwise approach. A MVP level 1 software made under the Founder Suite Inc",
       tags: ["Next.js", "TypeScript", "LLM", "Supabase"],
       status: "Completed",
       

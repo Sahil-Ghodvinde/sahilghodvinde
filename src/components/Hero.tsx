@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 
 export default function Hero() {
@@ -134,11 +135,13 @@ export default function Hero() {
             innovation, and problem-solving. From a young age, I have been driven by curiosity and a 
             desire to create impactful solutions for real-world challenges.
           </p>
-          <button className="bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full 
-            hover:bg-white/20 transition-all duration-300 shadow-lg
-            group-hover:shadow-white/10">
-            Take a Tour
-          </button>
+          <Link href="/projects">
+        <button className="bg-white/10 backdrop-blur-sm text-white px-6 py-2 rounded-full 
+                hover:bg-white/20 transition-all duration-300 shadow-lg
+                group-hover:shadow-white/10">
+          See Projects
+        </button>
+      </Link>
         </div>
       </div>
     </div>
