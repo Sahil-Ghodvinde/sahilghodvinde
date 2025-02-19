@@ -7,8 +7,8 @@ import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <main className="min-h-screen bg-black text-white overflow-x-hidden">
+      <div className="max-w-full sm:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <Header />
         <Hero />
         <Updates />

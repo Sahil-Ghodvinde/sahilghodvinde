@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
       <footer className="py-8 border-t border-gray-800">
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div>
             <h3 className="font-bold mb-2">Quick Links</h3>
             <ul className="space-y-1">

@@ -1,10 +1,15 @@
+"use client"
+
 import Link from 'next/link'
+import { useState } from 'react'
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   const navItems = [
     { label: 'Projects', href: '/projects' },
     { label: 'Updates', href: '/updates' },
-    { label: 'Urban Problems', href: '/urban-problems' },
+    { label: 'Urban Problems', href: '/update' },
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ]
@@ -55,9 +60,42 @@ export default function Header() {
               transition-all duration-500" />
           </Link>
 
+          {/* Mobile Menu Button */}
+          <button 
+            className="lg:hidden z-50 text-white"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <svg 
+              className="w-6 h-6" 
+              fill="none" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth="2" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              {isMenuOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+
           {/* Navigation */}
-          <nav>
-            <ul className="flex gap-6">
+          <nav className={`
+            ${isMenuOpen 
+              ? 'fixed top-4 right-4 h-auto w-64 bg-black/95 shadow-lg rounded-2xl lg:relative lg:top-0 lg:right-0 lg:w-auto lg:bg-transparent lg:shadow-none' 
+              : 'hidden lg:block'
+            }
+          `}>
+            <ul className={`
+              flex items-center
+              ${isMenuOpen 
+                ? 'flex-col gap-6 p-6 lg:flex-row lg:p-0' 
+                : 'flex-row gap-6'
+              }
+            `}>
               {navItems.map((item) => (
                 <li key={item.label}>
                   <Link 
@@ -67,6 +105,7 @@ export default function Header() {
                       after:bg-white after:bottom-[-4px] after:left-0
                       after:scale-x-0 hover:after:scale-x-100
                       after:transition-transform after:duration-300 after:origin-left"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
                   </Link>

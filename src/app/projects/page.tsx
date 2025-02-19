@@ -9,13 +9,25 @@ export default function Projects() {
   const projects = [
     {
         title: "Online Test Software using AI-Based Grading",
-        category: "React.js, Node.js, Express.js, MongoDB",
+        category: "Artificial Intelligence",
         image: "/d4.png",
         description: "A project that replaces the traditional teachers need to correct and grade the tests along wtih AI generated feedback. A MVP level 1 software made under the Founder Suite Inc",
         tags: ["Next.js", "TypeScript", "LLM", "Supabase"],
         status: "Completed",
-        github: "https://github.com/yourusername/traffix"
+
+        demo: "https://takemytest.vercel.app/"
     },
+
+    {
+      title: "Visola- The Education Ai",
+      category: "Artificial Intelligence",
+      image: "/d17.png",
+      description: "A project that replaces the traditional teachers need to correct and grade the tests along wtih AI generated feedback. A MVP level 1 software made under the Founder Suite Inc",
+      tags: ["Next.js", "TypeScript", "LLM", "Supabase"],
+      status: "Completed",
+      
+      demo: "https://visola-kappa.vercel.app/"
+  },
 
     {
         title: "Project M-Park",
@@ -24,7 +36,8 @@ export default function Projects() {
         description: "An intelligent traffic management system using computer vision and machine learning to optimize traffic flow and reduce congestion in urban areas.",
         tags: ["Next.js", "JavaScript", "Html/CSS", "MongoDB"],
         status: "In Development",
-        github: "https://github.com/yourusername/traffix"
+        
+        demo: '/update'
     },
 
     {
@@ -34,7 +47,7 @@ export default function Projects() {
         description: "An intelligent traffic management system using computer vision and machine learning to optimize traffic flow and reduce congestion in urban areas.",
         tags: ["React.Js", "OpenCV", "TensorFlow", "YOLOv5"],
         status: "Completed",
-        github: "https://github.com/yourusername/traffix"
+        github: "https://github.com/Sahil-Ghodvinde/car-galaxy"
     },
 
     {
@@ -154,7 +167,7 @@ export default function Projects() {
                         {/* Project Links */}
                         <div className="flex items-center gap-4">
                           <motion.a
-                            href={project.github}
+                             href={project.github ? project.github : '/update'}
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ y: -2 }}
@@ -171,7 +184,7 @@ export default function Projects() {
                           </motion.a>
 
                           <motion.a
-                            href="#"
+                            href={project.demo ? project.demo : '/update'}
                             whileHover={{ y: -2 }}
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full
                               bg-gradient-to-r from-[#4F46E5]/10 to-[#9333EA]/10

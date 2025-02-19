@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <div className="min-h-screen bg-gray-950 text-white overflow-x-hidden">
       {/* Container wrapper for entire content */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         {/* Header */}
@@ -27,7 +27,7 @@ export default function About() {
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-9000/20 to-purple-500/20 blur-xl" />
             <div className="relative bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
               <div className="flex flex-col md:flex-row items-start gap-12">
-                <div className="md:w-1/3">
+                <div className="md:w-1/3 relative">
                   <motion.div 
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
@@ -125,7 +125,7 @@ export default function About() {
                     </p>
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li>Managed over 2 Model United Nations</li>
-                      <li>Startup idea Pitching competition</li>
+                      <li>Managed Startup idea Pitching competition</li>
                       <li>Started Koffee with Innovation Podcast (ACE)</li>
                       <li>Handled official social Media page</li>
                     </ul>
@@ -248,7 +248,7 @@ export default function About() {
                     height={300}
                     className="rounded-xl"
                   />
-                  <div className="absolute bottom-4 left-20 bg-gray-900/80 backdrop-blur-sm px-4 py-2 rounded-lg">
+                  <div className="absolute top-26 left-27 bg-gray-900/80 backdrop-blur-sm px-4 py-2 rounded-lg">
                     <p className="text-sm font-medium">Chief HR Officer</p>
                     <p className="text-xs text-gray-400">I&E Cell </p>
                   </div>
