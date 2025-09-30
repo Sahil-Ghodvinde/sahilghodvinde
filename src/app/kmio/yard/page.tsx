@@ -118,7 +118,7 @@ const YardPage: React.FC = () => {
             <div className="bg-[#F5F7FA] p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-[#00B0B4] mb-4">About Muttom Yard</h3>
               <p className="text-gray-700 mb-4">
-                Muttom Yard serves as the central maintenance and stabling facility for Kochi Metro's rolling stock. 
+                Muttom Yard serves as the central maintenance and stabling facility for Kochi Metro&apos;s rolling stock. 
                 The yard is equipped with state-of-the-art facilities for scheduled maintenance, cleaning, and 
                 inspection of train rakes. The layout has been optimized for minimal shunting time and maximum 
                 operational efficiency.

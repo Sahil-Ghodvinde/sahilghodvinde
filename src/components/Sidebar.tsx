@@ -2,16 +2,14 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { 
-  HomeIcon, 
-  VideoCameraIcon, 
-  MapIcon, 
-  XMarkIcon, 
+import {
+  HomeIcon,
+  VideoCameraIcon,
+  MapIcon,
+  QuestionMarkCircleIcon,
   Bars3Icon,
-  ArrowLeftIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  ArrowTopRightOnSquareIcon
+  XMarkIcon,
+  ArrowLeftIcon
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 

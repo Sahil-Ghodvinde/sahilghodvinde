@@ -69,7 +69,7 @@ const YouTubePage: React.FC = () => {
             
             <div className="mt-8 text-center">
               <p className="text-gray-700 mb-4">
-                Watch the full demonstration of how KMIO transforms the nightly induction process at Kochi Metro's Muttom Yard.
+                Watch the full demonstration of how KMIO transforms the nightly induction process at Kochi Metro&apos;s Muttom Yard.
               </p>
               <a
                 href="/kmio"

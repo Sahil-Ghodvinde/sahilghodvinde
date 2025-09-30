@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { BookOpenIcon, Cog6ToothIcon, ComputerDesktopIcon, LightBulbIcon, ArrowLongRightIcon, ArrowDownIcon, CodeBracketIcon, ServerIcon, CpuChipIcon, CloudArrowUpIcon, ArrowPathRoundedSquareIcon, ChartBarIcon, ClockIcon, ShieldCheckIcon, CurrencyDollarIcon, UserGroupIcon, DocumentTextIcon, WrenchScrewdriverIcon, ArrowRightIcon, CheckCircleIcon, ArrowPathIcon, ScaleIcon, ArrowTopRightOnSquareIcon, ClockIcon as ClockIconSolid, ShieldCheckIcon as ShieldCheckIconSolid, ChartBarIcon as ChartBarIconSolid, UserGroupIcon as UserGroupIconSolid, Cog6ToothIcon as Cog6ToothIconSolid } from '@heroicons/react/24/outline'
+import { BookOpenIcon, ComputerDesktopIcon, LightBulbIcon, ArrowDownIcon, CodeBracketIcon, ServerIcon, CpuChipIcon, CloudArrowUpIcon, ArrowPathRoundedSquareIcon, ChartBarIcon, ClockIcon, CurrencyDollarIcon, UserGroupIcon, DocumentTextIcon, ArrowRightIcon, CheckCircleIcon, ArrowPathIcon, ScaleIcon, ArrowTopRightOnSquareIcon, ClockIcon as ClockIconSolid, ChartBarIcon as ChartBarIconSolid, UserGroupIcon as UserGroupIconSolid, ShieldCheckIcon, ShieldCheckIcon as ShieldCheckIconSolid, Cog6ToothIcon } from '@heroicons/react/24/outline'
 import Sidebar from '@/components/Sidebar'
 
 interface WorkflowStep {
