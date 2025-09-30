@@ -6,7 +6,6 @@ import {
   HomeIcon,
   VideoCameraIcon,
   MapIcon,
-  QuestionMarkCircleIcon,
   Bars3Icon,
   XMarkIcon,
   ArrowLeftIcon
@@ -19,26 +18,15 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ currentPage = 'home' }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
   // Check if the screen is mobile on component mount and on window resize
   useEffect(() => {
-    const checkIfMobile = () => {
-      const mobile = window.innerWidth < 1024; // lg breakpoint
-      setIsMobile(mobile);
-      // Always start closed, regardless of screen size
-      setIsOpen(false);
-    };
-
-    // Initial check
-    checkIfMobile();
+    // Always start closed
+    setIsOpen(false);
 
     // Add event listener for window resize
     const handleResize = () => {
-      const mobile = window.innerWidth < 1024;
-      setIsMobile(mobile);
       // Close sidebar when resizing to mobile
-      if (mobile) {
+      if (window.innerWidth < 1024) {
         setIsOpen(false);
       }
     };
