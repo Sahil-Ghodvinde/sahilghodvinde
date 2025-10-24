@@ -69,7 +69,7 @@ const YouTubePage: React.FC = () => {
             
             <div className="mt-8 text-center">
               <p className="text-gray-700 mb-4">
-                Watch the full demonstration of how BSLO transforms the rake formation process at Bokaro Steel's Muttom Yard.
+                Watch the full demonstration of how BSLO transforms the rake formation process at Bokaro Steel&apos;s Muttom Yard.
               </p>
               <a
                 href="/bslo"
@@ -87,7 +87,7 @@ const YouTubePage: React.FC = () => {
       <footer className="bg-[#006666] text-white py-6 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} BSLO - Bokaro Steel Logistics Optimizer. All rights reserved.
+            &copy; {new Date().getFullYear()} BSLO Bokaro Steel Logistics Optimizer. All rights reserved.
           </p>
         </div>
       </footer>
